@@ -84,6 +84,9 @@ class _WeatherPageState extends State<WeatherPage> {
 
               //Sıcaklık
               Text('${_weather?.temperature.round()}°C'),
+              const SizedBox(
+                height: 10,
+              ),
 
               //Durum
               Text(_weather?.mainCondition ?? "")
